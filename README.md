@@ -1,3 +1,4 @@
+# apiPetshop
 # Configurando bibliotecas e instalando 
 
 npm init -y
@@ -16,7 +17,8 @@ C:\Arquivos de Programas\MySQL>cd "MySQL Server 8.0"
 
 C:\Arquivos de Programas\MySQL\MySQL Server 8.0>cd bin
 
-PS C:\Arquivos de Programas\MySql\MySQL Server 8.0\bin> .\mysql -u root -h 127.0.0.1 -p
+C:\Arquivos de Programas\MySql\MySQL Server 8.0\bin> .\mysql -u root -h 127.0.0.1 -p
+
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 11
@@ -39,7 +41,7 @@ mysql>
 
 node api/index.js <-executa nossa api
 
-# apipetshop
+
 
 
 
