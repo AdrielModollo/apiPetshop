@@ -3,6 +3,9 @@ const app = express()
 const bodyParser = require('body-parser')
 const config = require('config')
 
-app.use(body.Parser.json())
+app.use(bodyParser.json())
 
-app.listen(config.get('api.porta'),  () => console.log('A API está funcionando!'))
+const roteador = require('./rotas/fornecedores')
+app.use('/api/fornecedores', roteador)
+
+app.listen(config.get('api.porta'), () => console.log('A API está funcionando!'))
