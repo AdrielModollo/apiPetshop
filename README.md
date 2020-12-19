@@ -35,7 +35,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql> create database petshop;
 Query OK, 1 row affected (0.01 sec)
 
-mysql> 
+mysql> create database petshop
 
 # Node
 
