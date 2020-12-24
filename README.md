@@ -17,7 +17,7 @@ C:\Arquivos de Programas\MySQL>cd "MySQL Server 8.0"
 
 C:\Arquivos de Programas\MySQL\MySQL Server 8.0>cd bin
 
-C:\Arquivos de Programas\MySql\MySQL Server 8.0\bin> .\mysql -u root -h 127.0.0.1 -p
+C:\Arquivos de Programas\MySql\MySQL Server 8.0\bin>.\mysql -u root -h 127.0.0.1 -p
 
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -41,7 +41,10 @@ mysql> create database petshop
 
 node api/index.js <-executa nossa api
 
-//teste
+# Para que serve o async?
 
+Eles permitem que escrever código baseado em promessa como se fosse síncrono, mas sem bloquear o segmento principal. Elas tornam o seu código assíncrono menos "inteligente" e mais legível. Se usar a palavra-chave async antes de uma definição de função, você pode usar await dentro da função
 
+# Para que serve o Await?
+A palavra-chave await é usada para esperar até que uma função (que geralmente demora para executar completamente) retorne seu resultado -- e ela espera esse resultado sem bloquear o fluxo do programa. 
 
