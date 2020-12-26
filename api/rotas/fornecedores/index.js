@@ -28,7 +28,6 @@ roteador.post('/', async (requisicao, resposta) => {
         )
     }
 })
-        
 
 roteador.get('/:idFornecedor', async (requisicao, resposta) => {
     try {
@@ -69,22 +68,21 @@ roteador.put('/:idFornecedor', async (requisicao, resposta) => {
 })
 
 roteador.delete('/:idFornecedor', async (requisicao, resposta) => {
-   try{
-    const id = requisicao.params.idFornecedor
-    const fornecedor = new Fornecedor({ id: id })
-    await fornecedor.carregar()
-    await fornecedor.remover()
-    resposta.status(204)
-    resposta.end()
-   } catch(erro) {
-    resposta.status(404)
-       resposta.send(
-           JSON.stringify({
-               mensagem: erro.message
-           })
-       )
-   }
-
+    try {
+        const id = requisicao.params.idFornecedor
+        const fornecedor = new Fornecedor({ id: id })
+        await fornecedor.carregar()
+        await fornecedor.remover()
+        resposta.status(204)
+        resposta.end()
+    } catch (erro) {
+        resposta.status(404)
+        resposta.send(
+            JSON.stringify({
+                mensagem: erro.message
+            })
+        )
+    }
 })
 
 module.exports = roteador
