@@ -3,7 +3,7 @@
 
 npm init -y
 
-npm install express body-parser sequelize mysql27
+npm install express body-parser sequelize mysql2
 
 npm install config
 
@@ -38,6 +38,8 @@ Query OK, 1 row affected (0.01 sec)
 mysql> create database petshop
 
 # Node
+
+node api/banco-de-dados/criarTabelas.js <- executar somente uma vez
 
 node api/index.js <-executa nossa api
 
