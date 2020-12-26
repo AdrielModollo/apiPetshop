@@ -2,10 +2,16 @@
 # Configurando bibliotecas e instalando 
 
 npm init -y
+//gera todas configurações necessária do package.json automáticamente
 
 npm install express body-parser sequelize mysql2
+//sequelize mysql2 ---> Sequelize é um ORM (Object-Relational Mapper) para Node. ... Ele permite criar, buscar, alterar e remover dados do banco usando objetos e métodos em JS
+//body-parser ---> O body-parser é um módulo capaz de converter o body da requisição para vários formatos. Um dos formatos que utilizamos é json.
+//npm install express ---> O NPM é uma ferramenta do Node. js para o gerenciamento de pacotes. Ele permite instalar, desinstalar e atualizar dependências em uma aplicação por meio de uma simples instrução na linha de comando
+
 
 npm install config
+//Faz a configuração de todos os pacotes
 
 # Como acessar o mysql pelo windows 10 através do powershell do vs code?
 
